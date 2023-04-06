@@ -7,8 +7,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { LoginRequest, LoginResponse, RegisterRequest, RegisterResponse } from '../../interfaces';
 
 export const fakeLoginResponse: LoginResponse = {
-  // fakeAccessToken.....should all come from real backend
-  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
+  // fakeAccessToken.....should all come from real backend  
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTIzNDU2Nzg5IiwibmFtZSI6Ik15IFRlc3QiLCJpYXQiOjE1MTYyMzkwMjJ9.WY_oQWhQTiyH7MhMMy1MFgnck4FaYY6NwOpq_j5vdBc',
   refreshToken: {
     id: 1,
     userId: 2,

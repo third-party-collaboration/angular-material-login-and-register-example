@@ -1,6 +1,9 @@
+
+
 <div>
   <a [routerLink]="['../login']">Go to Login</a>
-  <mat-card>
+  <div  *ngIf="isLoggeIn()">Please Logout to Register new user</div>
+  <mat-card *ngIf="!isLoggeIn()">
     <mat-card-title>Register</mat-card-title>
 
     <mat-card-content>
@@ -64,6 +67,5 @@
 
       </form>
     </mat-card-content>
-
   </mat-card>
 </div>

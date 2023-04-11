@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { JwtModule } from '@auth0/angular-jwt';
 
@@ -29,6 +30,7 @@ export function tokenGetter() {
     AppRoutingModule,
     // Angular Material Imports
     MatSnackBarModule,
+    MatChipsModule,
     // Jwt Helper Module Import
     JwtModule.forRoot({
       config: {

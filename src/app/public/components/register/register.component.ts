@@ -4,6 +4,7 @@ import { CustomValidators } from '../../custom-validator';
 import { AuthService } from '../../services/auth-service/auth.service';
 import { tap } from 'rxjs';
 import { Router } from '@angular/router';
+import { LOCALSTORAGE_TOKEN_KEY } from 'src/app/app.module';
 
 @Component({
   selector: 'app-register',
@@ -37,6 +38,12 @@ export class RegisterComponent {
       // If registration was successfull, then navigate to login route
       tap(() => this.router.navigate(['../login']))
     ).subscribe();
+  }
+
+  isLoggeIn() : boolean {
+    let checkState = (localStorage.getItem(LOCALSTORAGE_TOKEN_KEY)) ? true : false;
+    console.log(`Checking if user is logged in... ${checkState}`);
+    return checkState;
   }
 
 }
